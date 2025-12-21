@@ -1,0 +1,56 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.a
+
+# Go
+*.test
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+# Go workspace file
+go.work
+go.work.sum
+
+# python
+__pycache__/
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# Neovim files
+*.swp
+*.swo
+*.un~
+*.bak
+
+# Logs and Temporary files
+*.log
+*.tmp
+*.temp
+
+# Environment and config files (Security)
+.env
+.envrc
+.env.*
+*.env
+*.env.*
+
+# Secret files
+*.pem
+*.key
+*.crt
+*.cert
+
+# Build directories and files
+/build/
+dist/
+
+# custom
+temp.py
+test.py
