@@ -1,0 +1,3 @@
+module github.com/chickiexd/advent_of_code_2025
+
+go 1.24.9
