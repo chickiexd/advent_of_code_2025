@@ -30,6 +30,7 @@ __pycache__/
 *.bak
 
 # Logs and Temporary files
+tmp/
 *.log
 *.tmp
 *.temp
@@ -52,5 +53,8 @@ __pycache__/
 dist/
 
 # custom
+input.txt
+example.txt
+problem.md
 temp.py
 test.py
