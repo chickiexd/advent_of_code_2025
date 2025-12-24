@@ -1,11 +1,14 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/chickiexd/advent_of_code_2025/solutions/day_01"
+	"github.com/chickiexd/advent_of_code_2025/solutions/day_02"
 	"github.com/chickiexd/advent_of_code_2025/utils"
 )
 
-const day = 1
+const day = 2
 
 // const part1_test_input = true
 const part1_test_input = false
@@ -15,6 +18,7 @@ const part2_test_input = false
 
 var funcs = map[int][]func(string) (int, error){
 	1: {day_01.Part1, day_01.Part2},
+	2: {day_02.Part1, day_02.Part2},
 }
 
 func main() {
@@ -28,7 +32,8 @@ func main() {
 		input = realInput
 	}
 	res := runPart(1, input)
-	println(res)
+	fmt.Println("Part 1 Result:")
+	fmt.Println(res)
 
 	if part2_test_input {
 		input = testInput
@@ -36,7 +41,8 @@ func main() {
 		input = realInput
 	}
 	res = runPart(2, input)
-	println(res)
+	fmt.Println("Part 2 Result:")
+	fmt.Println(res)
 }
 
 func runPart(part int, input string) int {
