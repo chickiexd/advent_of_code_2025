@@ -134,7 +134,8 @@ func Part2(input string) (int, error) {
 
 	for len(queue) > 0 {
 		crntPoint := queue[0]
-		if counterGrid[crntPoint.y][crntPoint.x] < 4 && counterGrid[crntPoint.y][crntPoint.x] >= 0 {
+		crntCounter := counterGrid[crntPoint.y][crntPoint.x]
+		if crntCounter < 4 && crntCounter >= 0 {
 			changedPoints := removeRoll(crntPoint, counterGrid)
 			counterGrid[crntPoint.y][crntPoint.x] = -1
 			queue = append(queue, changedPoints...)
