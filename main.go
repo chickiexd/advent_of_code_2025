@@ -8,10 +8,11 @@ import (
 	"github.com/chickiexd/advent_of_code_2025/solutions/day_03"
 	"github.com/chickiexd/advent_of_code_2025/solutions/day_04"
 	"github.com/chickiexd/advent_of_code_2025/solutions/day_05"
+	"github.com/chickiexd/advent_of_code_2025/solutions/day_06"
 	"github.com/chickiexd/advent_of_code_2025/utils"
 )
 
-const day = 5
+const day = 6
 
 // const part1_test_input = true
 const part1_test_input = false
@@ -25,6 +26,7 @@ var funcs = map[int][]func(string) (int, error){
 	3: {day_03.Part1, day_03.Part2},
 	4: {day_04.Part1, day_04.Part2},
 	5: {day_05.Part1, day_05.Part2},
+	6: {day_06.Part1, day_06.Part2},
 }
 
 func main() {
